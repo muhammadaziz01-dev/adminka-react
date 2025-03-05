@@ -5,10 +5,10 @@ function Index() {
     {/* Sidebar */}
     <nav className="w-64 bg-gray-800 text-white h-screen p-4">
       <ul>
-        <li><Link to="/admin/dashboard">Dashboard</Link></li>
+        <li><Link to="/dashboard">Dashboard</Link></li>
         {/* <li><Link to="/admin/products">Products</Link></li>
         <li><Link to="/admin/categories">Categories</Link></li> */}
-        <li><Link to="/admin/settings">Settings</Link></li>
+        <li><Link to="/settings">Settings</Link></li>
       </ul>
     </nav>
 
