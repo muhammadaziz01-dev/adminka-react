@@ -7,7 +7,7 @@ import {getCookies} from "../utils/cookie"
 
 // Auth'ni tekshirish uchun funksiya
 const isAuthenticated = () => {
-  return getCookies("token"); // Agar token bo'lsa, foydalanuvchi avtorizatsiyadan o'tgan
+  return getCookies("access_token"); 
 };
 
 const router = createBrowserRouter([
