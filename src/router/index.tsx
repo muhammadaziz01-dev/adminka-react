@@ -12,10 +12,6 @@ const isAuthenticated = () => {
 
 const router = createBrowserRouter([
   {
-    path: "/login",
-    element: <Login />,
-  },
-  {
     path: "/",
     element: isAuthenticated() ? <AdminLayout /> : <Navigate to="/login" />,
     children: [
@@ -25,6 +21,10 @@ const router = createBrowserRouter([
       { path: "settings", element: <Settings /> },
       { path: "", element: <Navigate to="dashboard" /> }, // Default sahifa
     ],
+  },
+  {
+    path: "/login",
+    element: <Login />,
   },
 ]);
 
