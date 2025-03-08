@@ -1,0 +1,49 @@
+.aside {
+    width: 240px;
+
+    &--nav {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+
+        &--itme {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 13px 30px;
+            color: #718096;
+            text-align: right;
+            font-family: Inter;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.3px;
+            transition: all .5s linear;
+            position: relative;
+
+            &::after{
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: "";
+                display: block;
+                height: 100%;
+                width: 6px;
+                background: transparent;
+                border-radius: 0 6px 6px 0;
+                // transition: all .3s linear;
+            }
+
+            &:hover {
+                color: #544FDE;
+
+                &::after{
+                    
+                    background: #544FDE;
+                }
+            }
+        }
+    }
+}
