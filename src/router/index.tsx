@@ -8,9 +8,14 @@ const router = createBrowserRouter([
     path: "/",
     element: <AuthCheck />, 
     children: [
-      { path: "dashboard", element: <Dashboard /> },
+      { path: "tour", element: <Dashboard /> },
+      {path:"hotel", element: <div>Hotels</div>},
+      {path:"new", element: <div>News</div>},
+      {path:"blog", element: <div>Blogs</div>},
+      {path:"product", element: <div>Products</div>},
+      {path:"category", element: <div>Categoris</div>},
       { path: "settings", element: <Settings /> },
-      { path: "", element: <Navigate to="dashboard" /> },
+      { path: "", element: <Navigate to="tour" /> },
     ],
   },
   {
