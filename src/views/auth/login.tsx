@@ -20,7 +20,7 @@ function Index() {
         toast.success("Success full login")
         setTimeout(()=>{
           setDisabled(false);
-          navigate("/dashboard");
+          navigate("/tour");
         }, 1500);
       }
     } catch (error:any) {
