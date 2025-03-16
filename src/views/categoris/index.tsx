@@ -1,7 +1,8 @@
-import "./style.scss"
+import "./style.scss";
+
 function Index() {
   return (
-    <div>Settings</div>
+    <div>Categoris page</div>
   )
 }
 
